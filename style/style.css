@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.wrepper {
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.header {
+    width: 1920px;
+    background-color: rgba(1, 1, 1, 1);
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__topMenu {
+    width: 132rem;
+    height: 5.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.header__topMenu_connecton {
+    display: flex;
+    gap: 2.8rem;
+    text-align: center;
+}
+
+.header__topMenu_connecton_tel-mail {
+    height: 2rem;
+    margin-left: 0.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__topMenu_connecton_tel::before {
+    content: url(/images/svg/phone.svg);
+    margin-right: 0.8rem;
+    height: 100%;
+}
+
+.header__topMenu_connecton_mail::before {
+    content: url(/images/svg/mail.svg);
+    margin-right: 0.8rem;
+    height: 100%;
+}
+
+.header__topMenu_btn {
+    border: none;
+    background-color: rgba(1, 1, 1, 1);
+    color: rgba(79, 143, 240, 1);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.header__topMenu_btn:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__box {
+    height: 82rem;
+    background: url(/images/png/фон.png);
+    position: relative;
+}
+
+.heade__box_topMenu {
+    background: rgba(1, 1, 1, 0.76);
+}
+
+.header__mainMenu {
+    width: 132rem;
+    height: 11.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.header__mainMenu_log {
+    width: 31.2rem;
+    height: 6.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__mainMenu_log_Logo {
+    font: 900 2.8rem "Nunito Sans", sans-serif;
+    color: rgba(79, 143, 240, 1);
+}
+
+.header__mainMenu_log_Logo-bottom {
+    font: 900 2rem "Nunito Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__mainMenu_menu_list {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+}
+
+.header__mainMenu_menu_list_item_link {
+    font: 700 1.8rem "Nunito Sans", sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__mainMenu_menu_list_item_link.active,
+.header__mainMenu_menu_list_item_link:hover {
+    color: rgba(79, 143, 240, 1);
+}
+
+.header__box_content {
+    width: 109rem;
+    height: 19.3rem;
+    margin: 15rem auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header__box_content_sp {
+    font: 300 3rem "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.header__box_content_title {
+    font: 600 5.6rem "Nunito Sans", sans-serif;
+    color: rgba(79, 143, 240, 1);
+    text-transform: uppercase;
+}
+
+.header__box_content_text {
+    font: 400 2rem / 120% "Nunito Sans", sans-serif;
+    text-align: center;
+}
+
+.header__box::after {
+    content: " ";
+    background-color: rgba(34, 34, 34, 0.20);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 192rem;
+    height: 71rem;
+    z-index: -1;
+}
+
+.header__box_btn {
+    width: 15.8rem;
+    height: 4.9rem;
+    display: block;
+    border: 0.2rem solid rgba(79, 143, 240, 1);
+    background: rgba(79, 143, 240, 1);
+    color: rgba(255, 255, 255, 1);
+    font: 900 1.4rem "Nunito Sans", sans-serif;
+    margin: 4.8rem auto 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header__box_btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(79, 143, 240, 1);
+}
+
+.header__box_sliderControl {
+    width: 132rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 19.2rem auto 0;
+}
