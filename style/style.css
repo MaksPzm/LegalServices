@@ -70,10 +70,10 @@ html {
 .header__box {
     height: 82rem;
     background: url(/images/png/фон.png);
-    position: relative;
 }
 
-.heade__box_topMenu {
+.header__box_topMenu {
+    height: 11.2rem;
     background: rgba(1, 1, 1, 0.76);
 }
 
@@ -83,7 +83,8 @@ html {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center; 
+    position: relative;
 }
 
 .header__mainMenu_log {
@@ -103,6 +104,10 @@ html {
     color: rgba(255, 255, 255, 1);
 }
 
+.header__mainMenu_menu_burger-menu {
+    display: none;
+}
+
 .header__mainMenu_menu_list {
     display: flex;
     gap: 3.2rem;
@@ -118,6 +123,43 @@ html {
 .header__mainMenu_menu_list_item_link.active,
 .header__mainMenu_menu_list_item_link:hover {
     color: rgba(79, 143, 240, 1);
+}
+
+.hidden {
+    display: none;
+}
+
+.header__mainMenu_mob_list {
+    width: 29rem;
+    height: 53rem;
+    position: absolute;
+    background-color: rgba(34, 34, 34, 1);
+    top: 0;
+    right: 0;
+    padding: 0;
+    z-index: 3;
+}
+
+.header__mainMenu_mob_exitImg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.header__mainMenu_menu_list.mob {
+    width: 10.9rem;
+    height: 23.4rem;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 2.4rem;
+    margin-top: 5rem;
+    margin-left: 2.6rem;
+}
+
+.header__mainMenu_menu_list_item_link.mob {
+    font-size: 1.6rem;
 }
 
 .header__box_content {
@@ -150,12 +192,12 @@ html {
 .header__box::after {
     content: " ";
     background-color: rgba(34, 34, 34, 0.20);
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 192rem;
     height: 71rem;
-    z-index: -1;
+    z-index: 0;
 }
 
 .header__box_btn {
@@ -182,4 +224,211 @@ html {
     display: flex;
     justify-content: space-between;
     margin: 19.2rem auto 0;
+}
+
+
+@media screen and (max-width: 834px) {
+    .header {
+        width: 834px;
+    }
+
+    .header__box_topMenu {
+        height: 8.4rem;
+        position: relative;
+    }
+
+    .header__topMenu,
+    .header__mainMenu {
+        width: 696px;
+    }
+
+    .header__mainMenu_menu_list {
+        display: none;
+    }
+
+    .header__mainMenu_menu_list.mob {
+        display: flex;
+    }
+
+    .header__mainMenu_menu_burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__mainMenu {
+        width: 69.6rem;
+        height: 8.4rem;
+        margin: 0 69px;
+        z-index: 1;
+    }
+
+    .header__mainMenu_log {
+        width: 21.7rem;
+        height: 4.7rem;
+    }
+
+    .header__mainMenu_log_Logo {
+        font-size: 2.2rem;
+    }
+
+    .header__mainMenu_log_Logo-bottom {
+        font-size: 1.6rem;
+        margin-top: -8px;
+    }
+
+    .header__box {
+        height: 52.9rem;
+        background: url(/images/png/mob/фон.png);
+    }
+
+    .header__box_content {
+        width: 69.6rem;
+        height: 18.6rem;
+        margin-top: 6.6rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header__box_content_sp {
+        font-size: 2.4rem;
+    } 
+
+    .header__box_content_title {
+        font-size: 5rem;
+    }
+
+    .header__box_content_text {
+        font-size: 1.8rem;
+    }
+
+    .header__box_btn {
+        margin-top: 4.6rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__box_sliderControl {
+        width: 69.6rem;
+        margin-top: 3.6rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header__box::after {
+        width: 83.4rem;
+        height: 44.5rem;
+        display: block;
+        background-color: rgba(34, 34, 34, 0.64);
+        position: relative;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 391px) {
+    .header {
+        width: 390px;
+    }
+
+    .header__box_topMenu {
+        height: 8.4rem;
+    }
+
+    
+
+    .header__topMenu,
+    .header__mainMenu {
+        width: 342px;
+    }
+
+    .header__topMenu_connecton_mail {
+        display: none;
+    }
+
+    .header__mainMenu_menu_list {
+        display: none;
+    }
+
+    .header__mainMenu_menu_burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__mainMenu {
+        width: 39rem;
+        height: 8.4rem;
+        margin: 0;
+        padding: 0 24px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header__mainMenu_log {
+        width: 21.7rem;
+        height: 4.7rem;
+    }
+
+    .header__mainMenu_log_Logo {
+        font-size: 2.2rem;
+    }
+
+    .header__mainMenu_log_Logo-bottom {
+        font-size: 1.6rem;
+        margin-top: -8px;
+    }
+
+    .header__mainMenu_menu {
+        padding: 0;
+    }
+
+    .header__mainMenu_mob_list {
+        height: 48.6rem;
+    }
+
+    .header__box {
+        height: 48.6rem;
+        background: url(/images/png/mob/фонMob.png);
+    }
+
+    .header__box_content {
+        width: 34.2rem;
+        height: 20.3rem;
+        margin-top: 6rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header__box_content_sp {
+        font-size: 1.8rem;
+    } 
+
+    .header__box_content_title {
+        font-size: 3rem;
+        width: 34.4rem;
+    }
+
+    .header__box_content_text {
+        font-size: 1.6rem;
+    }
+
+    .header__box_btn {
+        margin-top: 3.2rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header__box_sliderControl {
+        display: none;
+    }
+
+    .header__box::after {
+        width: 39rem;
+        height: 40.2rem;
+        position: relative;
+        top: 0;
+        background-color: rgba(34, 34, 34, 0.64);
+        z-index: 0;
+    }
 }

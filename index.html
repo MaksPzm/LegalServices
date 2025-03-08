@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script/script.js" defer></script>
     <title>Правозащитник</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <button class="header__topMenu_btn" type="button">Заказать звонок</button>
             </div>
             <div class="header__box">
-                <div class="heade__box_topMenu">   
+                <div class="header__box_topMenu">   
                     <div class="header__mainMenu">
                         <div class="header__mainMenu_log">
                             <span class="header__mainMenu_log_Logo">ПРАВОЗАЩИТНИК</span>
@@ -47,9 +48,34 @@
                                     <a class="header__mainMenu_menu_list_item_link" href="#">Контакты</a>
                                 </li>
                             </ul>
+                            <div class="header__mainMenu_menu_burger-menu">
+                                <img class="header__mainMenu_menu_burger-menu_img" src="images/svg/menu_burger.svg" alt="меню">
+                            </div>
                         </menu>
                     </div>
-                </div>   
+                    <menu class="header__mainMenu_mob_list hidden">
+                        <ul class="header__mainMenu_menu_list mob">
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link mob" href="#">Услуги</a>
+                            </li>
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link active mob" href="#">О компании</a>
+                            </li>
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link mob" href="#">Наши юристы</a>
+                            </li>
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link mob" href="#">Отзывы</a>
+                            </li>
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link mob" href="#">Новости</a>
+                            </li>
+                            <li class="header__mainMenu_menu_list_item">
+                                <a class="header__mainMenu_menu_list_item_link mob" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <img class="header__mainMenu_mob_exitImg" src="images/svg/close_icon.svg" alt="exit">
+                    </menu>   
                 <div class="header__box_content">
                     <span class="header__box_content_sp">Оказываем весь комплекс</span>
                     <h1 class="header__box_content_title">Юридических услуг</h1>
