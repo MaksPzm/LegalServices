@@ -13,3 +13,38 @@ const mobMenuBtn = (() => {
         burgerMenu.classList.remove('hidden');
     })
 })()
+
+const iconsActive = (() => {
+    const boxServicesActive: any[] = [...document.querySelectorAll(".main__boxServices_services_elem")];
+    boxServicesActive.forEach(elem => {
+        elem.addEventListener('mouseover', (event) => {
+            const { target } = event;
+            // console.log('target: ', target);
+            const iconsBoxServices: any = target.querySelector(".main__boxServices_services_elem_img");
+            
+            if (iconsBoxServices !== null) {
+                console.log('iconsBoxSwrvices: ', iconsBoxServices);
+                iconsBoxServices.remove();
+                const img = new Image;
+                img.src = "images/svg/agreement__active.svg";
+                img.classList.add('main__boxServices_services_elem_img');
+                img.classList.add('imgActive');
+                target.insertAdjacentHTML('afterbegin', img.outerHTML);
+                let imgActive = document.querySelector('.imgActive');
+            }
+        })
+        elem.addEventListener('mouseout', (event) => {
+            const { target } = event;
+            const iconsBoxServicesActive: any = target.querySelector(".main__boxServices_services_elem_img.imgActive");
+            
+            if (iconsBoxServicesActive !== null) {
+                iconsBoxServicesActive.remove();
+                const img = new Image;
+                img.src = "images/svg/agreement.svg";
+                img.classList.add('main__boxServices_services_elem_img');
+                img.classList.add('imgActive');
+                target.insertAdjacentHTML('afterbegin', img.outerHTML); 
+            }
+        })
+    })
+})()
