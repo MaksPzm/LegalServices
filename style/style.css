@@ -352,7 +352,7 @@ html {
 }
 
 .main__boxServices_btn {
-    margin-top: 64px;
+    margin-top: 48px;
 }
 
 
@@ -452,6 +452,54 @@ html {
         position: relative;
         top: 0;
         z-index: 0;
+    }
+
+
+    /*___main____*/
+
+    .main {
+        width: 834px;
+    }
+
+    .main__boxServices {
+        width: 834px;
+        height: 113rem;
+    }
+
+    .main__boxServices_title {
+        font-size: 2.4rem;
+        margin-top: 6rem;
+    }
+
+    .main__boxServices_txt {
+        width: 69.6rem;
+    }
+    
+    .main__boxServices_services {
+        width: 69.6rem;
+        height: 73.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2.4rem;
+    }
+
+    .main__boxServices_services_elem_img{
+        margin-top: 3rem;
+    }
+
+    .main__boxServices_services_elem_title-h3{
+        width: 27.2rem;
+        margin: 1.5rem auto 0;
+        line-height: 120%;
+    }
+
+    .main__boxServices_services_elem_text {
+        width: 27.2rem;
+        height: 5.1rem;
+    }
+
+    .main__boxServices_btn {
+        margin-top: 48px;
     }
 }
 

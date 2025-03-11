@@ -20,8 +20,7 @@ const iconsActive = (() => {
         elem.addEventListener('mouseover', (event) => {
             const { target } = event;
             // console.log('target: ', target);
-            const iconsBoxServices: any = target.querySelector(".main__boxServices_services_elem_img");
-            
+            const iconsBoxServices = target.querySelector(".main__boxServices_services_elem_img");
             if (iconsBoxServices !== null) {
                 console.log('iconsBoxSwrvices: ', iconsBoxServices);
                 iconsBoxServices.remove();
