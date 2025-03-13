@@ -43,3 +43,9 @@ const iconsActive = (() => {
         });
     });
 })();
+function SlidersSwipe() {
+    new SwipeSlider('.main__boxServices_services', {
+        wheelScrolling: true,
+    });
+}
+SlidersSwipe();

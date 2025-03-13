@@ -47,3 +47,12 @@ const iconsActive = (() => {
         })
     })
 })()
+
+
+function SlidersSwipe(): void {
+    new SwipeSlider('.main__boxServices_services', {
+       wheelScrolling: true, 
+    })
+}
+
+SlidersSwipe()

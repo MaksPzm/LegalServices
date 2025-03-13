@@ -254,6 +254,7 @@ html {
     width: 5rem;
     height: 0.3rem;
     border: 1px solid rgba(79, 143, 240, 1);
+    background-color: rgba(79, 143, 240, 1);
     margin: 1rem auto 0;
 }
 
@@ -354,6 +355,44 @@ html {
 .main__boxServices_btn {
     margin-top: 48px;
 }
+
+
+.main_block-CompanyHistory {
+    width: 1920px;
+    height: 58.4rem;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+}
+
+.main_block-CompanyHistory_wrap {
+    width: 1319px;
+    height: 42.4rem;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_block-CompanyHistory_wrap_section_title {
+    width: 69.2rem;
+    height: 4.2rem;
+}
+
+.main_block-CompanyHistory_wrap_section_title_elem {
+    font: 800 2.8rem / 150% "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 1);
+}
+
+.main_block-CompanyHistory_wrap_section_title_elem.el1 {
+    padding-right: 0.5rem;
+}
+
+.main_block-CompanyHistory_wrap_section_title_elem.el2 {
+    color: rgba(79, 143, 240, 1);
+    font-weight: 800;
+}
+
+
 
 
 
@@ -608,5 +647,70 @@ html {
         top: 0;
         background-color: rgba(34, 34, 34, 0.64);
         z-index: 0;
+    }
+
+       
+        /*___main____*/
+
+    .main {
+        width: 390px;
+    }
+
+    .main__boxServices {
+        width: 390px;
+        height: 54.2rem;
+    }
+
+    .main__boxServices_title {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .main__boxServices_txt {
+        width: 34.2rem;
+    }
+    
+    .main__boxServices_services {
+        width: 390px;
+        height: 21.5rem;
+        margin: 0;
+        margin-top: 2.4rem;
+        display: flex;
+        overflow: hidden;
+        gap: 0;
+    }
+
+    .main__boxServices_services_elem {
+        width: 25rem;
+        height: 21.5rem;
+        margin-left: 2.4rem;
+    }
+
+    .main__boxServices_services_elem_img{
+        margin-top: 2.4rem;
+    }
+
+    .main__boxServices_services_elem_title-h3{
+        width: 21.8rem;
+        margin: 1.5rem 1.6rem 0;
+        line-height: 120%;
+    }
+
+    .main__boxServices_services_elem_text {
+        width: 21.8rem;
+        height: 5.1rem;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        display: -webkit-box; /* Включаем флексбоксы */
+        -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    }
+
+    .main__boxServices_btn {
+        margin-top: 30px;
+    }
+
+    .elem1, .elem2,
+    .elem3, .elem4 {
+        display: none;
     }
 }
