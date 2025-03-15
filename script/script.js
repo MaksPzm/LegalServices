@@ -43,9 +43,57 @@ const iconsActive = (() => {
         });
     });
 })();
+// запуск плагина для слайдера услуг
 function SlidersSwipe() {
     new SwipeSlider('.main__boxServices_services', {
         wheelScrolling: true,
     });
 }
 SlidersSwipe();
+// описание сотрудника
+function employeeDescriptions() {
+    const specialists = Array.from(document.querySelectorAll(".main__specialists_spec_box"));
+    const subName = ['Горюнова Полина Алексеевна', 'Миронов Александр Германович', 'Шестакова Елизавета Егоровна', 'Архипов Максим Константинович'];
+    const posts = ['Юрист международного права', 'Кредитный адвокат, банковский юрист', 'Юридический консультант', 'Корпоративный юрист'];
+    const namePhoto = ['Горюнова', 'Миронов', 'Шестакова', 'Архипов'];
+    specialists.forEach((name, index) => {
+        name.addEventListener('mouseover', (event) => {
+            const { target } = event;
+            const img = target.querySelector(".main__specialists_spec_box_img");
+            const name = target.querySelector(".main__specialists_spec_box_name");
+            const post = target.querySelector(".main__specialists_spec_box_post");
+            console.log("name", name);
+            img.style.display = "none";
+            name.style.display = "none";
+            post.style.display = "none";
+            let divNewElemets = `
+            <div class="main__boxServices_services_elem_line elem1 main__specialists_spec_box_elem1 hover"></div>
+            <div class="main__boxServices_services_elem_line elem2 main__specialists_spec_box_elem2 hover"></div>
+            <div class="main__boxServices_services_elem_line elem3 main__specialists_spec_box_elem3 hover"></div>
+            <div class="main__boxServices_services_elem_line elem4 main__specialists_spec_box_elem4 hover"></div>
+            <h4 class="main__specialists_spec_box_name hover">${subName[index]}</h4>
+            <span class="main__specialists_spec_box_post hover">${posts[index]}</span>
+            <p class="main__specialists_spec_box_text hover">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+            <span class="main__specialists_spec_box_text-span hover">12 лет юридической практики</span>
+            `;
+            target.innerHTML = divNewElemets;
+        });
+        name.addEventListener('mouseout', (e) => {
+            const { target } = e;
+            let divElement = `
+            <img class="main__specialists_spec_box_img" src="images/png/staff/${namePhoto[index]}/content/Rectangle 19.png" alt="фотография">
+            <h4 class="main__specialists_spec_box_name">${subName[index]}</h4>
+            <span class="main__specialists_spec_box_post">${posts[index]}</span>
+            `;
+            target.innerHTML = divElement;
+        });
+    });
+}
+employeeDescriptions();
+// запуск плагина для слайдера список юристов
+function SlidersSwipeSpecialists() {
+    new SwipeSlider('.main__specialists_spec', {
+        wheelScrolling: true,
+    });
+}
+SlidersSwipeSpecialists();

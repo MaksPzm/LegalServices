@@ -452,6 +452,131 @@ html {
 
 
 
+.main__specialists {
+    width: 1920px;
+    height: 73.9rem;
+    padding-top: 1px;
+    margin: -1px auto 0;
+    background-color: rgba(247, 247, 247, 1);
+}
+
+.main__specialists_tit {
+    font: 800 2.8rem "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.main__specialists_line {
+    margin: 10px auto 0;
+}
+
+.main__specialists_txt {
+    width: 92rem;
+    height: 3.8rem;
+    display: block;
+    margin: 2.4rem auto 0;
+    font: 1.6rem / 120% "Nunito Sans", sans-serif;
+    text-align: center;
+}
+
+.main__specialists_spec {
+    display: flex;
+    width: 132rem;
+    height: 41.4rem;
+    gap: 2.4rem;
+    margin: 4.8rem auto 0;
+}
+
+.main__specialists_spec_box {
+    width: 31.2rem;
+    height: 41.4rem;
+    box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    cursor: pointer;
+}
+
+.main__specialists_spec_box_name {
+    font: 700 1.6rem / 120% "Nunito Sans", sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.main__specialists_spec_box_post {
+    font: 300 1.4rem / 120% "Nunito Sans", sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+    text-transform: lowercase;
+    display: block;
+}
+
+.main__specialists_spec_box_img {
+    width: 31.2rem;
+    height: 32rem;
+}
+
+.main__specialists_spec_box::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.0);
+    position: absolute;
+    display: block;
+}
+
+.main__specialists_spec_box_elem1.hover {
+    border-left: 1px solid rgba(79, 143, 240, 1);
+    border-top: 1px solid rgba(79, 143, 240, 1);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.main__specialists_spec_box_elem2.hover {
+    border-right: 1px solid rgba(79, 143, 240, 1);
+    border-top: 1px solid rgba(79, 143, 240, 1);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.main__specialists_spec_box_elem3.hover {
+    border-left: 1px solid rgba(79, 143, 240, 1);
+    border-bottom: 1px solid rgba(79, 143, 240, 1);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.main__specialists_spec_box_elem4.hover {
+    border-right: 1px solid rgba(79, 143, 240, 1);
+    border-bottom: 1px solid rgba(79, 143, 240, 1);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.main__specialists_spec_box_name.hover {
+    padding-top: 83px;
+}
+
+.main__specialists_spec_box_post.hover {
+    text-transform: none;
+}
+
+.main__specialists_spec_box_text.hover {
+    width: 265px;
+    height: 10.2rem;
+    text-align: center;
+    margin: 4rem auto 0;
+    font: 300 1.4rem / 120% "Nunito Sans", sans-serif;
+}
+
+.main__specialists_spec_box_text-span.hover {
+    display: block;
+    padding-top: 40px;
+    text-align: center;
+    font: 600 1.6rem / 120% "Nunito Sans", sans-serif;
+}
+
+
 @media screen and (max-width: 834px) {
     .header {
         width: 834px;
@@ -639,6 +764,65 @@ html {
 
     .main_block-CompanyHistory_wrap_sectionImg {
         display: none;
+    }
+
+
+    .main__specialists {
+        width: 834px;
+        height: 71.2rem;
+    }
+    
+    .main__specialists_tit {
+        font-size:2.8rem;
+        margin-top: 6rem;
+    }
+    
+    .main__specialists_txt {
+        width: 69.6rem;
+        height: 5.7rem;
+    }
+    
+    .main__specialists_spec {
+        display: flex;
+        width: 83.4rem;
+        overflow: hidden;
+    }
+    
+    .main__specialists_spec_box {
+        width: 300rem;
+    }
+    
+    .main__specialists_spec_box_name {
+        padding-top: 2.4rem;
+    }
+    
+    .main__specialists_spec_box_post {
+        
+    }
+    
+    .main__specialists_spec_box_img {
+        width: 30rem;
+        height: 32rem;
+    }
+    
+    .main__specialists_spec_box_elem1.hover {
+        top: 5px;
+        left: 5px;
+    }
+    
+    .main__specialists_spec_box_elem2.hover {
+        top: 5px;
+        right: 5px;
+    }
+    
+    .main__specialists_spec_box_elem3.hover {
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    .main__specialists_spec_box_elem4.hover {
+        bottom: 5px;
+        right: 5px;
     }
 }
 
@@ -863,5 +1047,77 @@ html {
 
     .main_block-CompanyHistory_wrap_sectionImg {
         display: none;
+    }
+
+
+
+    .main__specialists {
+        width: 395px;
+        height: 60.7rem;
+    }
+    
+    .main__specialists_tit {
+        font-size:2rem;
+        margin-top: 4rem;
+    }
+    
+    .main__specialists_txt {
+        width: 34.8rem;
+        height: 8.5rem;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+    }
+    
+    .main__specialists_spec {
+        display: flex;
+        width: 39.5rem;
+        height: 35.9rem;
+        margin-top: 2.4rem;
+        overflow: hidden;
+    }
+    
+    .main__specialists_spec_box {
+        width: 25rem;
+        height: 34.8rem;
+    }
+    
+    .main__specialists_spec_box_name {
+        width: 21.8rem;
+        height: 3.8;
+        margin: 2.4rem auto 0;
+        padding-top: 0;
+    }
+    
+    .main__specialists_spec_box_post {
+        width: 21.8rem;
+        height: 3.4rem;
+        padding: 0;
+        margin: 1rem auto 0;
+    }
+    
+    .main__specialists_spec_box_img {
+        width: 25rem;
+        height: 23.5rem;
+    }
+    
+    .main__specialists_spec_box_name.hover {
+        padding-top: 30px;
+    }
+    
+    
+    .main__specialists_spec_box_text.hover {
+        width: 230px;
+        height: 12rem;
+        margin: 1rem auto 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        font: 300 1.4rem / 120% "Nunito Sans", sans-serif;
+    }
+    
+    .main__specialists_spec_box_text-span.hover {
+        display: block;
+        padding-top: 1rem;
+        text-align: center;
+        font: 600 1.6rem / 120% "Nunito Sans", sans-serif;
     }
 }
