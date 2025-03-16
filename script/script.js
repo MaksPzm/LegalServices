@@ -97,3 +97,9 @@ function SlidersSwipeSpecialists() {
     });
 }
 SlidersSwipeSpecialists();
+// запускаем слфйде отзывов
+const SlidersReviews = (() => {
+    new SwipeSlider('.main__blockReviews_reviews', {
+        wheelScrolling: true,
+    });
+})();

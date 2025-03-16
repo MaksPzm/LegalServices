@@ -110,3 +110,11 @@ function SlidersSwipeSpecialists(): void {
 }
 
 SlidersSwipeSpecialists()
+
+
+// запускаем слфйде отзывов
+const SlidersReviews = ((): void => {
+    new SwipeSlider('.main__blockReviews_reviews', {
+        wheelScrolling: true, 
+     })
+})()

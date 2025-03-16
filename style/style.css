@@ -577,6 +577,96 @@ html {
 }
 
 
+
+.main__blockReviews {
+    height: 58.8rem;
+    background-image: url(/images/png/reviews/Фон\ блока.png);
+    padding-top: 1px;
+}
+
+.main__blockReviews_top-titl {
+    width: 1320px;
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 79px auto 0;
+    align-items: center;
+}
+
+.main__blockReviews_top-titl_head_title {
+    font: 800 2.8rem / 150% "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.main__blockReviews_top-titl_head_title_line {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.main__blockReviews_reviews {
+    width: 1320px;
+    height: 24.4rem;
+    display: flex;
+    gap: 24px;
+    margin: 48px auto 0;
+}
+
+.main__blockReviews_reviews_elem {
+    width: 648px;
+    height: 24.4rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+}
+
+.main__blockReviews_reviews_elem_content {
+    width: 584px;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px auto 0;
+}
+
+.main__blockReviews_reviews_elem_content_txt {
+    width: 401px;
+    height: 5.1rem;
+}
+
+.main__blockReviews_reviews_elem_content_txt_sp {
+    font: 300 1.4rem / 120% "Nunito Sans", sans-serif;
+    display: block;
+}
+
+.main__blockReviews_reviews_elem_content_txt_name {
+    font: bold 2rem / 150% "Nunito Sans", sans-serif;
+    display: block;
+    padding-top: 0.4rem;
+}
+
+.main__blockReviews_reviews_elem_content_text {
+    padding: 1.6rem 32px 3.2rem;
+    font: 1.4rem / 150% "Nunito Sans", sans-serif;
+}
+
+.main__blockReviews_button {
+    width: 1320px;
+    height: 4.9rem;
+    margin: 32px auto 80px;
+    display: flex;
+    gap: 24px;
+}
+
+.main__blockReviews_button_allReviews {
+    width: 14.6rem;
+    height: 4.9rem;
+}
+
+.main__blockReviews_button_writeReview {
+    width: 18.5rem;
+    height: 4.9rem;
+}
+
+
 @media screen and (max-width: 834px) {
     .header {
         width: 834px;
@@ -791,6 +881,14 @@ html {
     .main__specialists_spec_box {
         width: 300rem;
     }
+
+    .main__specialists_spec_box:first-of-type {
+        margin-left: 69px;
+    }
+
+    .main__specialists_spec_box:last-of-type {
+        margin-right: 69px;
+    }
     
     .main__specialists_spec_box_name {
         padding-top: 2.4rem;
@@ -823,6 +921,58 @@ html {
     .main__specialists_spec_box_elem4.hover {
         bottom: 5px;
         right: 5px;
+    }
+
+
+
+    .main__blockReviews {
+        height: 56.7rem;
+        background-image: url(/images/png/reviews/Фон\ блока\ планшет.png);
+    }
+    
+    .main__blockReviews_top-titl {
+        width: 696px;
+        height: 4.9rem;
+        margin: 59px auto 0;
+    }
+    
+    .main__blockReviews_top-titl_head_title {
+        font: 800 2.4rem / 150% "Nunito Sans", sans-serif;
+    }
+    
+    .main__blockReviews_reviews {
+        width: 834px;
+        height: 26.5rem;
+        margin: 48px auto 0;
+        overflow: hidden;
+    }
+    
+    .main__blockReviews_reviews_elem {
+        width: 576px;
+        height: 26.5rem;
+    }
+
+    .main__blockReviews_reviews_elem:first-of-type {
+        margin-left: 69px;
+    }
+
+    .main__blockReviews_reviews_elem:last-of-type {
+        margin-right: 69px;
+    }
+    
+    .main__blockReviews_reviews_elem_content {
+        width: 512px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    
+    .main__blockReviews_reviews_elem_content_txt {
+        width: 329px;
+    }
+    
+    .main__blockReviews_button {
+        width: 696px;
+        margin: 36px auto 60px;
     }
 }
 
@@ -1119,5 +1269,85 @@ html {
         padding-top: 1rem;
         text-align: center;
         font: 600 1.6rem / 120% "Nunito Sans", sans-serif;
+    }
+
+
+
+    .main__blockReviews {
+        height: 57.9rem;
+    }
+    
+    .main__blockReviews_top-titl {
+        width: 341px;
+        height: 4.3rem;
+        margin: 30px auto 0;
+    }
+    
+    .main__blockReviews_top-titl_head_title {
+        font: 800 2rem / 150% "Nunito Sans", sans-serif;
+    }
+
+    .main__blockReviews_top-titl_img {
+        display: none;
+    }
+    
+    .main__blockReviews_reviews {
+        width: 395px;
+        height: 30.3rem;
+        margin: 24px auto 0;
+        overflow: hidden;
+    }
+    
+    .main__blockReviews_reviews_elem {
+        width: 340px;
+        height: 30.3rem;
+    }
+
+    .main__blockReviews_reviews_elem:first-of-type {
+        margin-left: 25px;
+    }
+
+    .main__blockReviews_reviews_elem:last-of-type {
+        margin-right: 25px;
+    }
+    
+    .main__blockReviews_reviews_elem_content {
+        width: 292px;
+        height: 5rem;
+        margin: 24px;
+        margin-bottom: 0;
+    }
+
+    .main__blockReviews_reviews_elem_content_photo {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .main__blockReviews_reviews_elem_content_txt_name {
+        font-size: 2rem;
+    }
+
+    .main__blockReviews_reviews_elem_content_img {
+        display: none;
+    }
+    
+    .main__blockReviews_reviews_elem_content_txt {
+        width: 226px;
+        padding: 1px;
+    }
+
+    .main__blockReviews_reviews_elem_content_text {
+        padding: 24px;
+        padding-top: 16px;
+    }
+    
+    .main__blockReviews_button {
+        width: 341px;
+        height: 11.4rem;
+        margin: 24px auto 4rem;
+        gap: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
