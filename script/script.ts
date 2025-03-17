@@ -15,7 +15,7 @@ const mobMenuBtn = (() => {
 })()
 
 const iconsActive = (() => {
-    const boxServicesActive: any[] = [...document.querySelectorAll(".main__boxServices_services_elem")];
+    const boxServicesActive: Element[] = [...document.querySelectorAll(".main__boxServices_services_elem")];
     boxServicesActive.forEach(elem => {
         elem.addEventListener('mouseover', (event) => {
             const { target } = event;
@@ -112,9 +112,42 @@ function SlidersSwipeSpecialists(): void {
 SlidersSwipeSpecialists()
 
 
-// запускаем слфйде отзывов
+// запускаем слайде отзывов
 const SlidersReviews = ((): void => {
     new SwipeSlider('.main__blockReviews_reviews', {
+        wheelScrolling: true, 
+     })
+})()
+
+// hover для блока main__info 
+const mainInfo = (():void => {
+    const blockElem: Element[] = Array.from(document.querySelectorAll(".main__info_block_elem"));
+    blockElem.forEach (elem => {
+        elem.addEventListener('mouseover', (event) => {
+            const { target } = event;
+            const border: Element[] = [...target.querySelectorAll(".main__info_block_elem_border")];
+            const imgHover: Element = target.querySelector('.main__info_block_elem_img-border');
+            const headingColor: Element = target.querySelector(".main__info_block_elem_he");
+            border.forEach((value) => {
+                value.style.display = "block";
+            })
+            if (!imgHover.classList.contains("dispalay-border")) imgHover.classList.add("dispalay-border");
+            headingColor.style.color = "rgba(79, 143, 240, 1)";
+            target.addEventListener('mouseout', () => {
+                border.forEach((value) => {
+                    value.style.display = "none";
+                })
+                if (imgHover.classList.contains("dispalay-border")) imgHover.classList.remove("dispalay-border");
+                headingColor.style.color = "rgba(34, 34, 34, 1)";
+            })
+        })
+    })
+})()
+
+
+// запускаем слайде пллезных материалов
+const SlidersInfo = ((): void => {
+    new SwipeSlider('.main__info_block', {
         wheelScrolling: true, 
      })
 })()

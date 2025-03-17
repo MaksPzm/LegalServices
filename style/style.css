@@ -667,6 +667,134 @@ html {
 }
 
 
+
+
+
+.main__info {
+    height: 91.3rem;
+    padding-top: 1px;
+    margin: -1px auto 0;
+}
+
+.main__info_tit {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main__info_text {
+    width: 92rem;
+    text-align: center;
+    font: 1.6rem / 120% "Nunito Sans", sans-serif;
+    margin: 2.4rem auto 0;
+}
+
+.main__info_block {
+    width: 1320px;
+    height: 48.1rem;
+    display: flex;
+    gap: 24px;
+    overflow: hidden;
+    margin: 4.8rem auto 0;
+}
+
+.main__info_block_elem{
+    width: 424px;
+    height: 48.1rem;
+    position: relative;
+}
+
+.main__info_block_elem::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.00);
+    cursor: pointer;
+    z-index: 4;
+}
+
+.dispalay-border::before {
+    content: " ";
+    width: 424px;
+    height: 270px;
+    position: absolute;
+    display: block;
+    background: rgba(79, 143, 240, 0.4);
+    z-index: 2;
+}
+
+.main__info_block_elem_img-border {
+    height: 270px;
+    position: relative;
+}
+
+.main__info_block_elem_border {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: none;
+    z-index: 3;
+}
+
+.main__info_block_elem_border.border1 {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    top: 20px;
+    left: 20px;
+}
+
+.main__info_block_elem_border.border2 {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    top: 20px;
+    right: 20px;
+}
+
+.main__info_block_elem_border.border3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    bottom: 20px;
+    left: 20px;
+}
+
+.main__info_block_elem_border.border4 {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    bottom: 20px;
+    right: 20px;
+}
+
+.main__info_block_elem_img {
+    width: 424px;
+    height: 270px;
+}
+
+.main__info_block_elem_he {
+    font: 700 1.6rem / 150% "Nunito Sans", sans-serif;
+    padding-top: 2.45rem;
+}
+
+.main__info_block_elem_txtS {
+    display: inline-block;
+    font: 300 1.2rem / 120% "Nunito Sans", sans-serif;
+    padding-top: 1.6rem;
+}
+
+.main__info_block_elem_text {
+    font: 1.4rem / 120% "Nunito Sans", sans-serif;
+    padding-top: 1.6rem;
+}
+
+.main__info_block_btn {
+    width: 15.3rem;
+    height: 4.9rem;
+    margin: 4.8rem auto 8rem;
+}
+
 @media screen and (max-width: 834px) {
     .header {
         width: 834px;

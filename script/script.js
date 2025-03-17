@@ -97,9 +97,41 @@ function SlidersSwipeSpecialists() {
     });
 }
 SlidersSwipeSpecialists();
-// запускаем слфйде отзывов
+// запускаем слайде отзывов
 const SlidersReviews = (() => {
     new SwipeSlider('.main__blockReviews_reviews', {
+        wheelScrolling: true,
+    });
+})();
+// hover для блока main__info 
+const mainInfo = (() => {
+    const blockElem = Array.from(document.querySelectorAll(".main__info_block_elem"));
+    blockElem.forEach(elem => {
+        elem.addEventListener('mouseover', (event) => {
+            const { target } = event;
+            const border = [...target.querySelectorAll(".main__info_block_elem_border")];
+            const imgHover = target.querySelector('.main__info_block_elem_img-border');
+            const headingColor = target.querySelector(".main__info_block_elem_he");
+            border.forEach((value) => {
+                value.style.display = "block";
+            });
+            if (!imgHover.classList.contains("dispalay-border"))
+                imgHover.classList.add("dispalay-border");
+            headingColor.style.color = "rgba(79, 143, 240, 1)";
+            target.addEventListener('mouseout', () => {
+                border.forEach((value) => {
+                    value.style.display = "none";
+                });
+                if (imgHover.classList.contains("dispalay-border"))
+                    imgHover.classList.remove("dispalay-border");
+                headingColor.style.color = "rgba(34, 34, 34, 1)";
+            });
+        });
+    });
+})();
+// запускаем слайде пллезных материалов
+const SlidersInfo = (() => {
+    new SwipeSlider('.main__info_block', {
         wheelScrolling: true,
     });
 })();
