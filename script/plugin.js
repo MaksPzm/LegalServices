@@ -17,7 +17,6 @@ class SwipeSlider {
     events() {
         if (this.container) {
             this.container.addEventListener('mousedown', (event) => {
-                console.log('Мы здесь');
                 this.isDragging = true; // мы нажали на блок
                 this.startX = event.pageX - this.container.offsetLeft; // стартовая позиция нахождения курсора
                 this.scrollLeft = this.container.scrollLeft; // находим расстояние от положения курсора до начала блока

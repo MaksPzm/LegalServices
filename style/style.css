@@ -795,6 +795,175 @@ html {
     margin: 4.8rem auto 8rem;
 }
 
+
+
+/*___footer____*/
+
+.footer {
+    width: 1920px;
+    height: 58.4rem;
+    padding-top: 1px;
+    margin: -1px auto 0;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.footer__wrapper {
+   width: 1320px;
+   margin: 80px auto 0;
+}
+
+.footer__wrapper_bloc-1 {
+    width: 1320px;
+    height: 6.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__wrapper_block_text {
+    width: 862px;
+    height: 3.8rem;
+    color: rgba(248, 245, 244, 1);
+    font: 1.6rem / 120% "Nunito Sans", sans-serif;
+}
+
+.footer__wrapper_bloc-1_line {
+    width: 1320px;
+    height: 1px;
+    border: 1px solid rgba(140, 140, 140, 1);
+    margin: 48px auto;
+}
+
+.footer__wrapper_bloc-2 {
+    width: 1320px;
+    height: 21.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__wrapper_bloc-2_contacts {
+    width: 419px;
+    height: 21.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__wrapper_bloc-2_contacts_elem {
+    width: 420px;
+    height: 5.5rem;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer__wrapper_bloc-2_contacts_elem_box span {
+    display: block;
+}
+
+.footer__wrapper_bloc-2_contacts_elem_box_lower {
+    color: rgba(140, 140, 140, 1);
+    font: 700 1.2rem "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.footer__wrapper_bloc-2_contacts_elem_box_upper {
+    font: 700 1.6rem / 150% "Nunito Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer__wrapper_bloc-2_list {
+   width: 190px;
+   height: 1.7rem; 
+}
+
+.footer__wrapper_bloc-2_list-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer__wrapper_bloc-2_list-list_item_link {
+    text-decoration: none;
+    font: bold 1.4rem "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer__wrapper_bloc-2_list-list_item_link.active,
+.footer__wrapper_bloc-2_list-list_item_link:hover {
+    color: rgba(79, 143, 240, 1);
+}
+
+.footer__wrapper_bloc-2_spec {
+    width: 420px;
+}
+
+.footer__wrapper_bloc-2_spec-top {
+    width: 420px;
+    height: 6.5rem;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer__wrapper_bloc-2_spec-top_inform {
+    width: 335px;
+    height: 5.1rem;
+}
+
+.footer__wrapper_bloc-2_spec-top_inform span {
+    display: block;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer__wrapper_bloc-2_spec-top_inform_name {
+    font: bold 2rem / 150% "Nunito Sans", sans-serif;
+}
+
+.footer__wrapper_bloc-2_spec-top_inform_post {
+    font: 300 1.4rem "Nunito Sans", sans-serif;
+}
+
+.footer__wrapper_bloc-2_spec_txt {
+    width: 420px;
+    height: 6.3rem;
+    font: 1.4rem / 150% "Nunito Sans", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 1.6rem;
+}
+
+.footer__wrapper_bloc-2_spec_btn {
+    width: 241px;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.footer__bottom {
+    width: 1920px;
+    height: 4.9rem;
+    background-color: rgba(24, 24, 24, 1);
+    padding-top: 1px;
+    margin-top: 79px;
+}
+
+.footer__bottom_elem {
+    width: 1320px;
+    height: 1.7rem;
+    margin: 16px auto;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__bottom_elem_span {
+    font: 1.4rem "Nunito Sans", sans-serif;
+}
+
+
+
 @media screen and (max-width: 834px) {
     .header {
         width: 834px;
@@ -1102,6 +1271,156 @@ html {
         width: 696px;
         margin: 36px auto 60px;
     }
+
+
+
+    .main__info {
+        height: 86.3rem;
+    }
+    
+    .main__info_tit {
+        margin-top: 6rem;
+        font-size: 2.4rem;
+    }
+    
+    .main__info_text {
+        width: 69.6rem;
+        font: 1.6rem / 120% "Nunito Sans", sans-serif;
+        margin: 3rem auto 0;
+    }
+    
+    .main__info_block {
+        width: 834px;
+        height: 48.1rem;
+        overflow: hidden;
+        margin: 2.9rem auto 0;
+    }
+    
+    .main__info_block_elem{
+        width: 336px;
+        height: 48.1rem;
+    }
+    
+    .dispalay-border::before {
+        content: " ";
+        width: 336px;
+        height: 270px;
+    }
+    
+    .main__info_block_elem_img {
+        width: 336px;
+        height: 270px;
+    }
+    
+    .main__info_block_elem_he {
+        font: 700 1.6rem / 150% "Nunito Sans", sans-serif;
+        padding-top: 1.6rem;
+    }
+    
+    .main__info_block_btn {
+        margin: 4.8rem auto 6rem;
+    }
+
+    .main__info_block_elem:first-of-type {
+        margin-left: 70px;
+    }
+    
+    .main__info_block_elem:last-of-type {
+        margin-right: 70px;
+    }
+
+
+
+        /*___footer____*/
+
+    .footer {
+        width: 834px;
+        height: 51.7rem;
+    }
+
+    .footer__wrapper {
+    width: 695px;
+    margin: 60px auto 0;
+    }
+
+    .footer__wrapper_bloc-1 {
+        width: 695px;
+        height: 6.2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer__wrapper_block_text {
+        display: none;
+    }
+
+    .footer__wrapper_bloc-1_line {
+        width: 695px;
+        margin: 24px auto;
+    }
+
+    .footer__wrapper_bloc-2 {
+        width: 695px;
+        height: 23.8rem;
+    }
+
+    .footer__wrapper_bloc-2_contacts {
+        width: 335px;
+        height: 20.3rem;
+        gap: 34px;
+    }
+
+    .footer__wrapper_bloc-2_contacts_elem {
+        width: 335px;
+        height: 4.5rem;
+        gap: 16px;
+    }
+
+    .footer__wrapper_bloc-2_contacts_elem_box_upper {
+        font: 700 1.4rem / 150% "Nunito Sans", sans-serif;
+    }
+
+    .footer__wrapper_bloc-2_list {
+        display: none;
+    }
+
+    .footer__wrapper_bloc-2_spec {
+        width: 334px;
+    }
+
+    .footer__wrapper_bloc-2_spec-top {
+        width: 334px;
+    }
+
+    .footer__wrapper_bloc-2_spec-top_inform {
+        width: 245px;
+    }
+
+    .footer__wrapper_bloc-2_spec_txt {
+        width: 334px;
+        height: 8.4rem;
+    }
+
+    .footer__wrapper_bloc-2_spec_btn {
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    .footer__bottom {
+        width: 834px;
+        height: 4.9rem;
+        margin-top: 59px;
+        padding-top: 1px;
+    }
+
+    .footer__bottom_elem {
+        width: 695px;
+        height: 1.7rem;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
 }
 
 
@@ -1476,6 +1795,151 @@ html {
         gap: 1.6rem;
         flex-direction: column;
         align-items: center;
+    }
 
+
+    .main__info {
+        height: 79.3rem;
+    }
+    
+    .main__info_tit {
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    
+    .main__info_text {
+        width: 34.2rem;
+        font: 1.4rem / 120% "Nunito Sans", sans-serif;
+        margin: 1.6rem auto 0;
+    }
+    
+    .main__info_block {
+        width: 390px;
+        height: 45.6rem;
+        overflow: hidden;
+        margin: 2.4rem auto 0;
+    }
+    
+    .main__info_block_elem{
+        width: 250px;
+        height: 45.6rem;
+    }
+    
+    .dispalay-border::before {
+        content: " ";
+        width: 250px;
+        height: 200px;
+    }
+
+    .main__info_block_elem_img-border {
+        height: 200px;
+    }
+    
+    .main__info_block_elem_img {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .main__info_block_elem_he {
+        font: 700 1.4rem / 150% "Nunito Sans", sans-serif;
+    }
+    
+    .main__info_block_btn {
+        margin: 4rem auto 4rem;
+    }
+
+    .main__info_block_elem:first-of-type {
+        margin-left: 25px;
+    }
+    
+    .main__info_block_elem:last-of-type {
+        margin-right: 25px;
+    }
+
+
+
+    /*___footer____*/
+
+    .footer {
+        width: 390px;
+        height: 71.5rem;
+    }
+
+    .footer__wrapper {
+        width: 335px;
+        margin: 40px auto 0;
+    }
+
+    .footer__wrapper_bloc-1 {
+        width: 276px;
+        height: 6.2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .footer__wrapper_block_text {
+        display: none;
+    }
+
+    .footer__wrapper_bloc-1_line {
+        width: 342px;
+        margin: 24px auto;
+    }
+
+    .footer__wrapper_bloc-2 {
+        width: 342px;
+        height: 44.4rem;
+        flex-direction: column;
+    }
+
+    .footer__wrapper_bloc-2_contacts {
+        width: 34px;
+        height: 16.7rem;
+        gap: 21px;
+    }
+
+    .footer__wrapper_bloc-2_list {
+        display: none;
+    }
+
+    .footer__wrapper_bloc-2_spec {
+        width: 334px;
+    }
+
+    .footer__wrapper_bloc-2_spec-top {
+        width: 334px;
+    }
+
+    .footer__wrapper_bloc-2_spec-top_inform {
+        width: 245px;
+    }
+
+    .footer__wrapper_bloc-2_spec_txt {
+        width: 334px;
+        height: 8.4rem;
+    }
+
+    .footer__wrapper_bloc-2_spec_btn {
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    .footer__bottom {
+        width: 390px;
+        height: 7.4rem;
+        margin-top: 39px;
+        padding-top: 1px;
+    }
+
+    .footer__bottom_elem {
+        width: 325px;
+        height: 4.2rem;
+        margin: 0 auto;
+        margin-top: 16px;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
     }
 }

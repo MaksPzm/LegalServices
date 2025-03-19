@@ -19,7 +19,6 @@ const iconsActive = (() => {
             // console.log('target: ', target);
             const iconsBoxServices = target.querySelector(".main__boxServices_services_elem_img");
             if (iconsBoxServices !== null) {
-                console.log('iconsBoxSwrvices: ', iconsBoxServices);
                 iconsBoxServices.remove();
                 const img = new Image;
                 img.src = "images/svg/agreement__active.svg";
