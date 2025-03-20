@@ -44,13 +44,13 @@ html {
 }
 
 .header__topMenu_connecton_tel::before {
-    content: url(images/svg/phone.svg);
+    content: url(/images/svg/phone.svg);
     margin-right: 0.8rem;
     height: 100%;
 }
 
 .header__topMenu_connecton_mail::before {
-    content: url(images/svg/mail.svg);
+    content: url(/images/svg/mail.svg);
     margin-right: 0.8rem;
     height: 100%;
 }
@@ -69,7 +69,7 @@ html {
 
 .header__box {
     height: 82rem;
-    background: url(images/png/фон.png);
+    background: url(/images/png/фон.png);
 }
 
 .header__box_topMenu {
@@ -1015,7 +1015,7 @@ html {
 
     .header__box {
         height: 52.9rem;
-        background: url(images/png/mob/фон.png);
+        background: url(/images/png/mob/фон.png);
     }
 
     .header__box_content {
@@ -1487,7 +1487,7 @@ html {
 
     .header__box {
         height: 48.6rem;
-        background: url(images/png/mob/фонMob.png);
+        background: url(/images/png/mob/фонMob.png);
     }
 
     .header__box_content {
