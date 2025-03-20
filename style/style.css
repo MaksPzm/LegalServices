@@ -69,7 +69,7 @@ html {
 
 .header__box {
     height: 82rem;
-    background: url(../images/png/фон.png);
+    background: url("../images/png/фон.png");
 }
 
 .header__box_topMenu {
