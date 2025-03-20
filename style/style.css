@@ -44,13 +44,13 @@ html {
 }
 
 .header__topMenu_connecton_tel::before {
-    content: url(../images/svg/phone.svg);
+    content: url("../images/svg/phone.svg");
     margin-right: 0.8rem;
     height: 100%;
 }
 
 .header__topMenu_connecton_mail::before {
-    content: url(../images/svg/mail.svg);
+    content: url("../images/svg/mail.svg");
     margin-right: 0.8rem;
     height: 100%;
 }
@@ -580,7 +580,7 @@ html {
 
 .main__blockReviews {
     height: 58.8rem;
-    background-image: url(../images/png/reviews/Фон\ блока.png);
+    background-image: url("../images/png/reviews/Фон\ блока.png");
     padding-top: 1px;
 }
 
@@ -1015,7 +1015,7 @@ html {
 
     .header__box {
         height: 52.9rem;
-        background: url(../images/png/mob/фон.png);
+        background: url("../images/png/mob/фон.png");
     }
 
     .header__box_content {
@@ -1224,7 +1224,7 @@ html {
 
     .main__blockReviews {
         height: 56.7rem;
-        background-image: url(../images/png/reviews/Фон\ блока\ планшет.png);
+        background-image: url("../images/png/reviews/Фон\ блока\ планшет.png");
     }
     
     .main__blockReviews_top-titl {
@@ -1487,7 +1487,7 @@ html {
 
     .header__box {
         height: 48.6rem;
-        background: url(../images/png/mob/фонMob.png);
+        background: url("../images/png/mob/фонMob.png");
     }
 
     .header__box_content {
